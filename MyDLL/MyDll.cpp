@@ -1,7 +1,8 @@
-//#define MYDLL_EXPORTS
 #include "MyDll.h"
 #include <iostream>
 #include <string>
+
+FUNC_POINT MyDll::cb;
 
 MyDll::MyDll()
 {
@@ -27,8 +28,16 @@ std::string MyDll::PlusQuotation(std::string s) {
 
 NumJ MyDll::GetEnum() {
 	return NumJ::San;
+}	
+
+void MyDll::SetCallback(FUNC_POINT cb) {
+	MyDll::cb = cb;
 }
 
-void MyDll::CallFunc(FUNC_POINT func) {
+void MyDll::SetNi() {
+	cb(NumJ::Ni);
+}
 
+void MyDll::SetSan() {
+	cb(NumJ::San);
 }

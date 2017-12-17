@@ -23,6 +23,20 @@ NumE MyDLLCliWrapper::GetEnum() {
 	return safe_cast<NumE>(MyDll::GetEnum());
 }
 
-void MyDLLCliWrapper::CallFunc(FUNC_POINT fp) {
-	MyDll::CallFunc(fp);
+void MyDLLCliWrapper::CallbackForCpp(NumJ num) {
+	Del(safe_cast<NumE>(num));
+}
+
+void MyDLLCliWrapper::SetCallback(CbDel^ del) {
+	MyDLLCliWrapper::Del = del;
+	FUNC_POINT fp = (FUNC_POINT)CallbackForCpp;
+	MyDll::SetCallback(fp);
+}
+
+void MyDLLCliWrapper::SetTwo() {
+	MyDll::SetNi();
+}
+
+void MyDLLCliWrapper::SetThree() {
+	MyDll::SetSan();
 }

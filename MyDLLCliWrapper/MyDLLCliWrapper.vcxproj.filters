@@ -18,9 +18,6 @@
     <ClInclude Include="MyDLLCliWrapper.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="MyDll.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyDLLCliWrapper.cpp">

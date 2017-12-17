@@ -15,7 +15,7 @@ int MyDLLCliWrapper::Plus2(int i) {
 	return MyDll::Plus2(i);
 }
 
-System::String^ MyDLLCliWrapper::PlusQuotation(System::String^ s) {
+System::String^ MyDLLCliWrapper::PlusKakko(System::String^ s) {
 	return "Åu" + s + "Åv";
 }
 

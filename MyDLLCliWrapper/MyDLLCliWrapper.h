@@ -24,7 +24,7 @@ namespace MyDllWrapper {
 		static bool ChangeBool(bool b);
 		static int Plus2(int i);
 
-		static System::String^ PlusQuotation(System::String^ s);
+		static System::String^ PlusKakko(System::String^ s);
 		static NumE GetEnum();
 		static void SetCallback(CbDel^ del);
 		static void SetTwo();

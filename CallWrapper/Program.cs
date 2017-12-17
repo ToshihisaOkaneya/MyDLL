@@ -12,6 +12,10 @@ namespace CallWrapper
         static void Main(string[] args)
         {
             Console.WriteLine(MyDLLCliWrapper.Plus2(2));
+            Console.WriteLine(MyDLLCliWrapper.ChangeBool(true));
+            Console.WriteLine(MyDLLCliWrapper.PlusQuotation("test"));
+            Console.WriteLine(MyDLLCliWrapper.GetEnum());
+            
         }
     }
 }

@@ -3,13 +3,13 @@
 #include "MyDll.h"
 
 typedef void(*FUNC_POINTER)(char *);
-typedef void(*FUNC_POINTER2)(Status s);
+typedef void(*FUNC_POINTER2)(NumJ s);
 
 void callback1(char* s) {
 	printf("%s\n", s);
 }
 
-void callback2(Status s) {
+void callback2(NumJ s) {
 	std::cout << "callback2: " << s << std::endl;
 }
 

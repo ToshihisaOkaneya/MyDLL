@@ -19,7 +19,10 @@ System::String^ MyDLLCliWrapper::PlusQuotation(System::String^ s) {
 	return "Åu" + s + "Åv";
 }
 
-//void MyDLLCliWrapper::CallFunc(FUNC_POINT fp) {
-//	MyDll::CallFunc(fp);
-//	System::Console::WriteLine(status1);
-//}
+NumE MyDLLCliWrapper::GetEnum() {
+	return safe_cast<NumE>(MyDll::GetEnum());
+}
+
+void MyDLLCliWrapper::CallFunc(FUNC_POINT fp) {
+	MyDll::CallFunc(fp);
+}

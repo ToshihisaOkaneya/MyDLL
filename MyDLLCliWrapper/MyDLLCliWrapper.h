@@ -1,9 +1,16 @@
 #pragma once
-#include "MyDll.h"
 #include <iostream>
 #using <mscorlib.dll>
+#include "MyDll.h"
 
 namespace MyDllWrapper {
+	public enum class NumE {
+		Zero,
+		One,
+		Two,
+		Three
+	};
+
 	public ref class MyDLLCliWrapper
 	{
 	private:
@@ -12,6 +19,7 @@ namespace MyDllWrapper {
 		static bool ChangeBool(bool b);
 		static int Plus2(int i);
 		static System::String^ PlusQuotation(System::String^ s);
-		//static void CallFunc(FUNC_POINT fp);
+		static NumE GetEnum();
+		static void CallFunc(FUNC_POINT fp);
 	};
 }

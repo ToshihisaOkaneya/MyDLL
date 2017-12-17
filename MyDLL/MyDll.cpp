@@ -16,7 +16,7 @@ bool MyDll::ChangeBool(bool b) {
 	return !b;
 }
 
-// ó‚¯æ‚Á‚½int‚É2‚ğ‰ÁZ‚µ‚Ä•Ô‚·
+// return i + 2
 int MyDll::Plus2(int i) {
 	return i + 2;
 }
@@ -25,6 +25,10 @@ std::string MyDll::PlusQuotation(std::string s) {
 	return "u" + s + "v";
 }
 
-//void MyDll::CallFunc(FUNC_POINT func) {
-//	func(status1);
-//}
+NumJ MyDll::GetEnum() {
+	return NumJ::San;
+}
+
+void MyDll::CallFunc(FUNC_POINT func) {
+
+}

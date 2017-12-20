@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+
+  <!-- Parameters used by tests at runtime -->
+  <TestRunParameters>
+    <Parameter name="OutputDir" value="C:\Users\tom\Downloads\out" />
+    <Parameter name="IpAddress" value="192.168.0.1" />
+  </TestRunParameters>
+
+</RunSettings>

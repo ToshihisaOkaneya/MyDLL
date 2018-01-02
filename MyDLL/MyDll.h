@@ -26,7 +26,6 @@ public:
 	static MYDLL_API void SetCallback(FUNC_POINT cb);
 	static MYDLL_API void SetNi();
 	static MYDLL_API void SetSan();
-	static MYDLL_API std::string ReadFile();
 private:
 	MyDll();
 	~MyDll();

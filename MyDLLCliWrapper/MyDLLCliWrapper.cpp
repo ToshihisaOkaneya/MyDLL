@@ -40,7 +40,3 @@ void MyDLLCliWrapper::SetTwo() {
 void MyDLLCliWrapper::SetThree() {
 	MyDll::SetSan();
 }
-
-System::String^ MyDLLCliWrapper::ReadFile() {
-	return gcnew System::String(MyDll::ReadFile().c_str());
-}

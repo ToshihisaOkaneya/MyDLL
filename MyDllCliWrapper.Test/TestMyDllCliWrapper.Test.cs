@@ -37,11 +37,5 @@ namespace MyDllWrapper.Test
         {
             Assert.AreEqual("「test」", MyDLLCliWrapper.PlusKakko("test"));
         }
-
-        [TestMethod]
-        public void TestFileRead()
-        {
-            Assert.AreEqual("hoge", MyDLLCliWrapper.ReadFile());
-        }
     }
 }

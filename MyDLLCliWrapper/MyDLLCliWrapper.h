@@ -29,6 +29,5 @@ namespace MyDllWrapper {
 		static void SetCallback(CbDel^ del);
 		static void SetTwo();
 		static void SetThree();
-		static System::String^ ReadFile();
 	};
 }
